@@ -1,0 +1,17 @@
+# Secrets
+.dev.vars*
+!.dev.vars.example
+.env*
+*.pem
+*.key
+
+# Tooling
+node_modules/
+.wrangler/
+
+# Large source data for tools/ preprocessing scripts
+tools/raw/
+
+# OS / editor
+.DS_Store
+.claude/worktrees/

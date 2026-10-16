@@ -1,0 +1,9 @@
+# Extend the CSP as you add CDNs (Turnstile: challenges.cloudflare.com; libraries: cdn.jsdelivr.net/unpkg.com; map tile hosts).
+# Short cache by default so deploys show up quickly; add long `immutable` rules only for versioned filenames (e.g. site.v3.css).
+/*
+  Content-Security-Policy: default-src 'self'; img-src 'self' data:; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+  X-Frame-Options: DENY
+  Cache-Control: public, max-age=300
