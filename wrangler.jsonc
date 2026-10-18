@@ -6,7 +6,8 @@
     "directory": "./public",
     "not_found_handling": "404-page"
   },
-  "observability": { "enabled": true }
+  "observability": { "enabled": true },
+  "previews": {}
 
   // Session 0.3: attach www as a Custom Domain (dashboard, or uncomment):
   // "routes": [{ "pattern": "www.francispanman.com", "custom_domain": true }],
